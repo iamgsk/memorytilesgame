@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Start Page */
+#start-page {
+  margin: auto;
+}
+
+/* Game Container */
+#game-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Game Board */
+#game-board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Tile Styles */
+.tile {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #fff;
+  user-select: none;
+}
+
+.tile.matched {
+  background-color: #4caf50;
+  cursor: default;
+}
+
+/* Confetti Canvas */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
